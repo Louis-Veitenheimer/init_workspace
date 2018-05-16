@@ -27,4 +27,4 @@ chsh -s $(grep /zsh$ /etc/shells | tail -1)
 
 # remove git integration with zsh theme (makes things hella slow when git
 # repo originates on a windows share)
-patch ~/.oh-my-zsh/themes/af-magic.zsh-theme af-magic.zsh-theme.patch
+sed -i '/$(git_prompt_info)/d' ~/.oh-my-zsh/themes/af-magic.zsh-theme
