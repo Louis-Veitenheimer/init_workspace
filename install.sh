@@ -1,14 +1,9 @@
 #!/bin/sh
 
-if [ "$(id -u)" != "0" ]; then
-  echo "This script must be run as root"
-  exit 1
-fi
-
 export DEBIAN_FRONTEND=noninteractive
-apt-get update
-apt-get upgrade -y
-apt-get install -y \
+sudo apt-get update
+sudo apt-get upgrade -y
+sudo apt-get install -y \
   curl \
   wget \
   vim \
