@@ -14,12 +14,16 @@ sudo apt-get install -y \
   git
 
 cp .vimrc ~/.vimrc
+cp .zshrc ~/.zshrc
 
 # install "oh my zsh"
-sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+git clone --depth=1 https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh || {
+  printf "Error: git clone of oh-my-zsh repo failed\n"
+  exit 1
+}
 
-# gets overwritten if added before oh-my-zsh is installed
-cp .zshrc ~/.zshrc
+# change current shell to zsh
+chsh -s $(grep /zsh$ /etc/shells | tail -1)
 
 # remove git integration with zsh theme (makes things hella slow when git
 # repo originates on a windows share)
