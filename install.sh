@@ -19,7 +19,9 @@ apt-get install -y \
   git
 
 cp .vimrc ~/.vimrc
-cp .zshrc ~/.zshrc
 
 # install "oh my zsh"
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+
+# gets overwritten if added before oh-my-zsh is installed
+cp .zshrc ~/.zshrc
