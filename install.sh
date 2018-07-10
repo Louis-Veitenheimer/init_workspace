@@ -29,3 +29,7 @@ chsh -s $(grep /zsh$ /etc/shells | tail -1)
 # remove git integration with zsh theme (makes things hella slow when git
 # repo originates on a windows share)
 sed -i '/$(git_prompt_info)/d' ~/.oh-my-zsh/themes/af-magic.zsh-theme
+
+# Emacs
+sudo apt install -y emacs
+cp -r .emacs.d ~/.emacs.d
