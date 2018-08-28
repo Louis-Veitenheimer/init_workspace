@@ -11,3 +11,5 @@
 (package-initialize)
 
 (add-hook 'yaml-mode-hook #'ansible-doc-mode)
+(setq make-backup-files nil) ; stop creating backup~ files
+(setq auto-save-default nil) ; stop creating #autosave# files
