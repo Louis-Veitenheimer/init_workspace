@@ -105,6 +105,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ll='ls -lah'
+alias rgrep='grep -rn --color'
 # git log --graph --all --decorate --oneline
 
 # powerline (vim plugin thing)
