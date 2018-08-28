@@ -71,6 +71,7 @@ plugins=(
   python
   tmux
   vi-mode
+  kubectl
 )
 
 source $ZSH/oh-my-zsh.sh
