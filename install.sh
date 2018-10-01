@@ -31,5 +31,5 @@ chsh -s $(grep /zsh$ /etc/shells | tail -1)
 sed -i '/$(git_prompt_info)/d' ~/.oh-my-zsh/themes/af-magic.zsh-theme
 
 # Emacs
-sudo apt install -y emacs
+sudo apt install -y emacs-nox
 cp -r .emacs.d ~/.emacs.d
