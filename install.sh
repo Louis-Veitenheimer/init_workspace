@@ -33,3 +33,4 @@ sed -i '/$(git_prompt_info)/d' ~/.oh-my-zsh/themes/af-magic.zsh-theme
 # Emacs
 sudo apt install -y emacs-nox
 cp -r .emacs.d ~/.emacs.d
+sudo update-alternatives --set editor /usr/bin/emacs25
