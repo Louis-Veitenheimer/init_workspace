@@ -70,7 +70,6 @@ plugins=(
   pip
   python
   tmux
-  vi-mode
   kubectl
 )
 
