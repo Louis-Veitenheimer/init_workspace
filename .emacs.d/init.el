@@ -15,6 +15,8 @@
 (setq auto-save-default nil) ; stop creating #autosave# files
 (setq-default indent-tabs-mode nil) ; use spaces instead of tabs
 
+(global-set-key (kbd "C-x g") 'magit-status) ; magit - git status
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
