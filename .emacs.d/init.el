@@ -15,6 +15,8 @@
 (setq auto-save-default nil) ; stop creating #autosave# files
 (setq-default indent-tabs-mode nil) ; use spaces instead of tabs
 
+(add-hook 'before-save-hook 'delete-trailing-whitespace) ; delete trailng white space when file is saved
+
 (global-set-key (kbd "C-x g") 'magit-status) ; magit - git status
 
 (custom-set-variables
